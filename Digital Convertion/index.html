@@ -1,0 +1,39 @@
+<!DOCTYPE html><html lang="en"><head>
+    <script src="p5.js"></script>
+    <script src="p5.sound.min.js"></script>
+
+    <script language="javascript" type="text/javascript" src="Analog_to_Digital_convertion.js"></script>
+    <script language="javascript" type="text/javascript" src="Other_js_function.js"></script>
+    
+    
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <meta charset="utf-8">
+
+  </head>
+  <body>
+    <a href="home.html">Home Page</a><br><hr>
+    <input type="number" id="gap" value="30" onchange="change_gap()">
+    <input type="number" id="stroke_weight" value="2.5" step="0.5" onchange="stroke_weight()">
+    
+    <input type="text" id="b_number" value="110101" onchange="get_number()">
+    <select name="" id="wave_function" onchange="select_option()">
+        <option value="unipolar_NRZ" selected="">Unipolar NRZ</option>
+        <option value="polar_NRZ_L">Polar NRZ-L</option>
+        <option value="polar_NRZ_I">Polar NRZ-I</option>
+        <option value="polar_RZ">Polar RZ</option>
+        <option value="Mancester">Mancester</option>
+        <option value="Differential_Mancester">Differential-Mancester</option>
+        <option value="AMI">AMI</option>
+        <option value="Pseudoternary">Pseudoternary</option>
+        <option value="MLT_3">MLT-3</option>
+        <option value="ASK">ASK</option>
+        <option value="FSK">FSK</option>
+        <option value="PSK">PSK</option>
+        <option value="QPSK" hidden="">QPSK</option>
+        
+    </select>
+    <input type="color" id="wave_color" value="#ff0000" onchange="get_wave_color()">
+    <script src="sketch.js"></script>
+  
+
+</body></html>
